@@ -1,4 +1,9 @@
 #!/bin/bash
+# using trap to catch sigint (ctrl+C) and print required message
+trap ctrl_c INT
+ctrl_c() {
+  echo "The execution of the script was aborted due to user entering Ctrl-c"
+}
 # Usage statement to be printed when no arguments are given
 print_usage() {
   echo "usage: ./removal.sh [-v] [-b] [-d <YYYY-MM-DD>] [-r <GitHub URL>]"
