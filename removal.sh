@@ -18,10 +18,10 @@ print_usage() {
   echo "usage: ./removal.sh [-v] [-b] [-d <YYYY-MM-DD>] [-r <GitHub URL>]"
   echo "arguments:"
   echo -e "  -v\t\t Verbose output"
-  echo -e "  -b\t\t Debug output"
+  echo -e "  -b\t\t Debug output. All deletions must be approved manually"
   echo -e "  -d\t\t date input for tags to be removed before (inclusive), format YYYY-MM-DD"
   echo -e "  -r\t\t repo GitHub URL from which tags will be removed"
-  echo -e "  -y\t\t yes mode, not asking for any deletion approval"
+  echo -e "  -y\t\t yes mode, not asking for any deletion approval. Does not work with debug option"
 }
 # log functions used to describe verbose operation
 log() {
