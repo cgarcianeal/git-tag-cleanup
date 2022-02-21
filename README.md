@@ -10,7 +10,7 @@ The script takes few non-positional arguments/options:
 
 Script usage:
 
-usage: ./removal.sh [-v] [-b] [-d <YYYY-MM-DD>] [-r <GitHub URL>]
+usage: ./removal.sh [-v] [-b] [-d &lt;YYYY-MM-DD&gt;] [-r &lt;GitHub-URL&gt;]
 
 arguments:"
 - "**-v** Verbose output"
